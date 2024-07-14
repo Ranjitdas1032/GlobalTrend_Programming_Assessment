@@ -1,0 +1,8 @@
+function toTitleCase(str) {
+    return str.split(' ').map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }).join(' ');
+}
+
+let str = "hello world, this is a test.";
+console.log(toTitleCase(str));
